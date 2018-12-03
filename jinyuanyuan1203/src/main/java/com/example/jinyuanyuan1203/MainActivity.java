@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void initView() {
         header_view = (HeaderView) findViewById(R.id.header_view);
-        header_view.setOnClickListener(this);
+        header_view.add().setOnClickListener(this);
         dele = (TextView) findViewById(R.id.dele);
         dele.setOnClickListener(this);
         my_history_view = (MyFloatLayout) findViewById(R.id.my_history_view);
