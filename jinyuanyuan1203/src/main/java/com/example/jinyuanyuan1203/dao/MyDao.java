@@ -19,7 +19,7 @@ public class MyDao {
         db = helper.getWritableDatabase();
     }
 
-    public void selectAll(ArrayList<String> data) {
+    public ArrayList<String> selectAll() {
         ArrayList<String> datas = new ArrayList<>();
         db = helper.getWritableDatabase();
         Cursor cursor = db.query("news", null, null, null, null, null, null);
@@ -27,6 +27,7 @@ public class MyDao {
             String name = cursor.getString(cursor.getColumnIndex("name"));
             datas.add(name);
         }
+        retur datas;
     }
 
     public void addData(String data) {
